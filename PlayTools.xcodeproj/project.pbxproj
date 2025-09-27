@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AFACB7B2E87BABD00551DDB /* StanHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACB7A2E87BAB600551DDB /* StanHook.h */; };
+		0AFACB7D2E87BB5D00551DDB /* NSUIWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFACB7C2E87BB5100551DDB /* NSUIWindow.m */; };
 		2847AE48298EFC0F00B0F983 /* PlayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2847AE47298EFC0F00B0F983 /* PlayScreen.swift */; };
 		6E76639B28D0FAE700DE4AF9 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76639A28D0FAE700DE4AF9 /* Plugin.swift */; };
 		6E76639C28D0FAE700DE4AF9 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76639A28D0FAE700DE4AF9 /* Plugin.swift */; };
@@ -102,6 +104,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0AFACB7A2E87BAB600551DDB /* StanHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StanHook.h; sourceTree = "<group>"; };
+		0AFACB7C2E87BB5100551DDB /* NSUIWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUIWindow.m; sourceTree = "<group>"; };
 		2847AE47298EFC0F00B0F983 /* PlayScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayScreen.swift; sourceTree = "<group>"; };
 		6E76639628D0FA6200DE4AF9 /* AKInterface-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AKInterface-Bridging-Header.h"; sourceTree = "<group>"; };
 		6E76639A28D0FAE700DE4AF9 /* Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
@@ -443,6 +447,8 @@
 				AA719706287A44D200623C15 /* PlayCover.swift */,
 				AA719705287A44D200623C15 /* PlayLoader.h */,
 				AA719702287A44D200623C15 /* PlayLoader.m */,
+				0AFACB7A2E87BAB600551DDB /* StanHook.h */,
+				0AFACB7C2E87BB5100551DDB /* NSUIWindow.m */,
 				AA719708287A44D200623C15 /* PlayTools.h */,
 				2847AE47298EFC0F00B0F983 /* PlayScreen.swift */,
 			);
@@ -560,6 +566,7 @@
 				AA71986E287A81A000623C15 /* NSObject+Swizzle.h in Headers */,
 				AB7DA47729B8A78B0034ACB2 /* PlayShadow.h in Headers */,
 				AA719846287A81A000623C15 /* IOHIDEvent+KIF.h in Headers */,
+				0AFACB7B2E87BABD00551DDB /* StanHook.h in Headers */,
 				AA719862287A81A000623C15 /* UITouch-KIFAdditions.h in Headers */,
 				AA71986B287A81A000623C15 /* UIApplication+Private.h in Headers */,
 				AA71986D287A81A000623C15 /* PTFakeMetaTouch.h in Headers */,
@@ -736,6 +743,7 @@
 				9562D1532AB484FD002C329D /* EventAdapter.swift in Sources */,
 				AA7197A2287A481500623C15 /* CircleMenu.swift in Sources */,
 				954389CE2B39F26600B063BB /* ElementView.swift in Sources */,
+				0AFACB7D2E87BB5D00551DDB /* NSUIWindow.m in Sources */,
 				B66E65002C936EA100E48FD0 /* PlayedAppleDBConstants.swift in Sources */,
 				9562D15A2AB4FBBB002C329D /* TransparentKeyboardEventAdapter.swift in Sources */,
 				AA71978B287A480D00623C15 /* MenuController.swift in Sources */,
@@ -793,7 +801,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -826,7 +834,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -984,7 +992,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 792V9HMJW3;
+				DEVELOPMENT_TEAM = RTW4R6X2F8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1029,7 +1037,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 792V9HMJW3;
+				DEVELOPMENT_TEAM = RTW4R6X2F8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
