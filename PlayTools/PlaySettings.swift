@@ -87,6 +87,25 @@ let settings = PlaySettings.shared
     @objc lazy var checkMicPermissionSync = settingsData.checkMicPermissionSync
 
     @objc lazy var limitMotionUpdateFrequency = settingsData.limitMotionUpdateFrequency
+
+    @objc public func getProxychainsSettings() -> String {
+        let default_config = """
+strict_chain
+#quiet_mode
+proxy_dns
+#proxy_dns_daemon 127.0.0.1:1053
+#remote_dns_subnet 127
+#remote_dns_subnet 10
+remote_dns_subnet 224
+# Some timeouts in milliseconds
+tcp_read_time_out 15000
+tcp_connect_time_out 8000
+#chain_len = 2
+[ProxyList]
+socks5 149.248.55.64 54876 XGfeB06a79 13kMEvgQEC
+"""
+        return default_config
+    }
 }
 
 struct AppSettingsData: Codable {

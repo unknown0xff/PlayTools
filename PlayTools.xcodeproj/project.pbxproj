@@ -9,6 +9,32 @@
 /* Begin PBXBuildFile section */
 		0AFACB7B2E87BABD00551DDB /* StanHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACB7A2E87BAB600551DDB /* StanHook.h */; };
 		0AFACB7D2E87BB5D00551DDB /* NSUIWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFACB7C2E87BB5100551DDB /* NSUIWindow.m */; };
+		0AFACCCF2E8C897900551DDB /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFACCCD2E8C897900551DDB /* core.c */; };
+		0AFACCD02E8C897900551DDB /* libproxychains.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFACCCE2E8C897900551DDB /* libproxychains.c */; };
+		0AFACCD12E8C897900551DDB /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFACCCB2E8C897900551DDB /* common.c */; };
+		0AFACCD22E8C897900551DDB /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCCC2E8C897900551DDB /* core.h */; };
+		0AFACCD32E8C897900551DDB /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCCA2E8C897900551DDB /* common.h */; };
+		0AFACCDD2E8C89D100551DDB /* krpc_vm_protect.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFACCDB2E8C89D100551DDB /* krpc_vm_protect.c */; };
+		0AFACCDE2E8C89D100551DDB /* krpcUser.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFACCDC2E8C89D100551DDB /* krpcUser.c */; };
+		0AFACCDF2E8C89D100551DDB /* krpc.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCDA2E8C89D100551DDB /* krpc.h */; };
+		0AFACCE22E8C8AE300551DDB /* dyld_cache_format.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCE12E8C8AE300551DDB /* dyld_cache_format.h */; };
+		0AFACCE32E8C8AE300551DDB /* cs_blobs.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCE02E8C8AE300551DDB /* cs_blobs.h */; };
+		0AFACCE92E8C8AF500551DDB /* Assembler.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFACCE52E8C8AF500551DDB /* Assembler.c */; };
+		0AFACCEA2E8C8AF500551DDB /* InlineHook.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFACCE82E8C8AF500551DDB /* InlineHook.c */; };
+		0AFACCEB2E8C8AF500551DDB /* InlineHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCE72E8C8AF500551DDB /* InlineHook.h */; };
+		0AFACCEC2E8C8AF500551DDB /* Assembler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCE42E8C8AF500551DDB /* Assembler.h */; };
+		0AFACCED2E8C8AF500551DDB /* ImmediateDecoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCE62E8C8AF500551DDB /* ImmediateDecoding.h */; };
+		0AFACCF32E8C8B0900551DDB /* MemoryTracker.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFACCF22E8C8B0900551DDB /* MemoryTracker.c */; };
+		0AFACCF42E8C8B0900551DDB /* MemoryAllocator.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFACCF02E8C8B0900551DDB /* MemoryAllocator.c */; };
+		0AFACCF52E8C8B0900551DDB /* MemoryTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCF12E8C8B0900551DDB /* MemoryTracker.h */; };
+		0AFACCF62E8C8B0900551DDB /* MemoryAllocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCEF2E8C8B0900551DDB /* MemoryAllocator.h */; };
+		0AFACCF72E8C8B0900551DDB /* Memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCEE2E8C8B0900551DDB /* Memory.h */; };
+		0AFACCFC2E8C8B1C00551DDB /* Macho.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFACCFB2E8C8B1C00551DDB /* Macho.c */; };
+		0AFACCFD2E8C8B1C00551DDB /* Macho.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCFA2E8C8B1C00551DDB /* Macho.h */; };
+		0AFACCFE2E8C8B1C00551DDB /* LCStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCF92E8C8B1C00551DDB /* LCStrings.h */; };
+		0AFACD022E8C8B2E00551DDB /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACD002E8C8B2E00551DDB /* error.h */; };
+		0AFACD032E8C8B2E00551DDB /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCFF2E8C8B2E00551DDB /* debug.h */; };
+		0AFACD042E8C8B2E00551DDB /* utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACD012E8C8B2E00551DDB /* utility.h */; };
 		2847AE48298EFC0F00B0F983 /* PlayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2847AE47298EFC0F00B0F983 /* PlayScreen.swift */; };
 		6E76639B28D0FAE700DE4AF9 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76639A28D0FAE700DE4AF9 /* Plugin.swift */; };
 		6E76639C28D0FAE700DE4AF9 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76639A28D0FAE700DE4AF9 /* Plugin.swift */; };
@@ -106,6 +132,32 @@
 /* Begin PBXFileReference section */
 		0AFACB7A2E87BAB600551DDB /* StanHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StanHook.h; sourceTree = "<group>"; };
 		0AFACB7C2E87BB5100551DDB /* NSUIWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUIWindow.m; sourceTree = "<group>"; };
+		0AFACCCA2E8C897900551DDB /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		0AFACCCB2E8C897900551DDB /* common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		0AFACCCC2E8C897900551DDB /* core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
+		0AFACCCD2E8C897900551DDB /* core.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
+		0AFACCCE2E8C897900551DDB /* libproxychains.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = libproxychains.c; sourceTree = "<group>"; };
+		0AFACCDA2E8C89D100551DDB /* krpc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = krpc.h; sourceTree = "<group>"; };
+		0AFACCDB2E8C89D100551DDB /* krpc_vm_protect.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = krpc_vm_protect.c; sourceTree = "<group>"; };
+		0AFACCDC2E8C89D100551DDB /* krpcUser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = krpcUser.c; sourceTree = "<group>"; };
+		0AFACCE02E8C8AE300551DDB /* cs_blobs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cs_blobs.h; sourceTree = "<group>"; };
+		0AFACCE12E8C8AE300551DDB /* dyld_cache_format.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dyld_cache_format.h; sourceTree = "<group>"; };
+		0AFACCE42E8C8AF500551DDB /* Assembler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assembler.h; sourceTree = "<group>"; };
+		0AFACCE52E8C8AF500551DDB /* Assembler.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Assembler.c; sourceTree = "<group>"; };
+		0AFACCE62E8C8AF500551DDB /* ImmediateDecoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImmediateDecoding.h; sourceTree = "<group>"; };
+		0AFACCE72E8C8AF500551DDB /* InlineHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InlineHook.h; sourceTree = "<group>"; };
+		0AFACCE82E8C8AF500551DDB /* InlineHook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = InlineHook.c; sourceTree = "<group>"; };
+		0AFACCEE2E8C8B0900551DDB /* Memory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Memory.h; sourceTree = "<group>"; };
+		0AFACCEF2E8C8B0900551DDB /* MemoryAllocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryAllocator.h; sourceTree = "<group>"; };
+		0AFACCF02E8C8B0900551DDB /* MemoryAllocator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MemoryAllocator.c; sourceTree = "<group>"; };
+		0AFACCF12E8C8B0900551DDB /* MemoryTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryTracker.h; sourceTree = "<group>"; };
+		0AFACCF22E8C8B0900551DDB /* MemoryTracker.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MemoryTracker.c; sourceTree = "<group>"; };
+		0AFACCF92E8C8B1C00551DDB /* LCStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCStrings.h; sourceTree = "<group>"; };
+		0AFACCFA2E8C8B1C00551DDB /* Macho.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macho.h; sourceTree = "<group>"; };
+		0AFACCFB2E8C8B1C00551DDB /* Macho.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Macho.c; sourceTree = "<group>"; };
+		0AFACCFF2E8C8B2E00551DDB /* debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		0AFACD002E8C8B2E00551DDB /* error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		0AFACD012E8C8B2E00551DDB /* utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
 		2847AE47298EFC0F00B0F983 /* PlayScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayScreen.swift; sourceTree = "<group>"; };
 		6E76639628D0FA6200DE4AF9 /* AKInterface-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AKInterface-Bridging-Header.h"; sourceTree = "<group>"; };
 		6E76639A28D0FAE700DE4AF9 /* Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
@@ -211,6 +263,102 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AFACCC82E8C895100551DDB /* Hook */ = {
+			isa = PBXGroup;
+			children = (
+				0AFACCD62E8C898E00551DDB /* krpc */,
+				0AFACCD42E8C898200551DDB /* apple */,
+				0AFACCD52E8C898700551DDB /* Hook */,
+				0AFACCD92E8C89B400551DDB /* utility */,
+				0AFACCD82E8C89A800551DDB /* SymbolResolve */,
+				0AFACCD72E8C899A00551DDB /* Memory */,
+			);
+			path = Hook;
+			sourceTree = "<group>";
+		};
+		0AFACCC92E8C895A00551DDB /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				0AFACCCA2E8C897900551DDB /* common.h */,
+				0AFACCCB2E8C897900551DDB /* common.c */,
+				0AFACCCC2E8C897900551DDB /* core.h */,
+				0AFACCCD2E8C897900551DDB /* core.c */,
+				0AFACCCE2E8C897900551DDB /* libproxychains.c */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		0AFACCD42E8C898200551DDB /* apple */ = {
+			isa = PBXGroup;
+			children = (
+				0AFACCE02E8C8AE300551DDB /* cs_blobs.h */,
+				0AFACCE12E8C8AE300551DDB /* dyld_cache_format.h */,
+			);
+			path = apple;
+			sourceTree = "<group>";
+		};
+		0AFACCD52E8C898700551DDB /* Hook */ = {
+			isa = PBXGroup;
+			children = (
+				0AFACCE42E8C8AF500551DDB /* Assembler.h */,
+				0AFACCE52E8C8AF500551DDB /* Assembler.c */,
+				0AFACCE62E8C8AF500551DDB /* ImmediateDecoding.h */,
+				0AFACCE72E8C8AF500551DDB /* InlineHook.h */,
+				0AFACCE82E8C8AF500551DDB /* InlineHook.c */,
+			);
+			path = Hook;
+			sourceTree = "<group>";
+		};
+		0AFACCD62E8C898E00551DDB /* krpc */ = {
+			isa = PBXGroup;
+			children = (
+				0AFACCDA2E8C89D100551DDB /* krpc.h */,
+				0AFACCDB2E8C89D100551DDB /* krpc_vm_protect.c */,
+				0AFACCDC2E8C89D100551DDB /* krpcUser.c */,
+			);
+			path = krpc;
+			sourceTree = "<group>";
+		};
+		0AFACCD72E8C899A00551DDB /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				0AFACCEE2E8C8B0900551DDB /* Memory.h */,
+				0AFACCEF2E8C8B0900551DDB /* MemoryAllocator.h */,
+				0AFACCF02E8C8B0900551DDB /* MemoryAllocator.c */,
+				0AFACCF12E8C8B0900551DDB /* MemoryTracker.h */,
+				0AFACCF22E8C8B0900551DDB /* MemoryTracker.c */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		0AFACCD82E8C89A800551DDB /* SymbolResolve */ = {
+			isa = PBXGroup;
+			children = (
+				0AFACCF82E8C8B1800551DDB /* Darwin */,
+			);
+			path = SymbolResolve;
+			sourceTree = "<group>";
+		};
+		0AFACCD92E8C89B400551DDB /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				0AFACCFF2E8C8B2E00551DDB /* debug.h */,
+				0AFACD002E8C8B2E00551DDB /* error.h */,
+				0AFACD012E8C8B2E00551DDB /* utility.h */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		0AFACCF82E8C8B1800551DDB /* Darwin */ = {
+			isa = PBXGroup;
+			children = (
+				0AFACCF92E8C8B1C00551DDB /* LCStrings.h */,
+				0AFACCFA2E8C8B1C00551DDB /* Macho.h */,
+				0AFACCFB2E8C8B1C00551DDB /* Macho.c */,
+			);
+			path = Darwin;
+			sourceTree = "<group>";
+		};
 		6E76639928D0FA6F00DE4AF9 /* AKInterface */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +584,8 @@
 		AA7196DA287A447700623C15 /* PlayTools */ = {
 			isa = PBXGroup;
 			children = (
+				0AFACCC92E8C895A00551DDB /* Proxy */,
+				0AFACCC82E8C895100551DDB /* Hook */,
 				ABCECEE729750BB100746595 /* MysticRunes */,
 				B127172328817AC70025112B /* DiscordActivity */,
 				AA719721287A480C00623C15 /* Controls */,
@@ -563,7 +713,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AFACCDF2E8C89D100551DDB /* krpc.h in Headers */,
+				0AFACCD22E8C897900551DDB /* core.h in Headers */,
+				0AFACCF52E8C8B0900551DDB /* MemoryTracker.h in Headers */,
+				0AFACCF62E8C8B0900551DDB /* MemoryAllocator.h in Headers */,
+				0AFACCF72E8C8B0900551DDB /* Memory.h in Headers */,
+				0AFACCE22E8C8AE300551DDB /* dyld_cache_format.h in Headers */,
+				0AFACCE32E8C8AE300551DDB /* cs_blobs.h in Headers */,
+				0AFACCD32E8C897900551DDB /* common.h in Headers */,
 				AA71986E287A81A000623C15 /* NSObject+Swizzle.h in Headers */,
+				0AFACCFD2E8C8B1C00551DDB /* Macho.h in Headers */,
+				0AFACCFE2E8C8B1C00551DDB /* LCStrings.h in Headers */,
+				0AFACCEB2E8C8AF500551DDB /* InlineHook.h in Headers */,
+				0AFACCEC2E8C8AF500551DDB /* Assembler.h in Headers */,
+				0AFACCED2E8C8AF500551DDB /* ImmediateDecoding.h in Headers */,
 				AB7DA47729B8A78B0034ACB2 /* PlayShadow.h in Headers */,
 				AA719846287A81A000623C15 /* IOHIDEvent+KIF.h in Headers */,
 				0AFACB7B2E87BABD00551DDB /* StanHook.h in Headers */,
@@ -572,6 +735,9 @@
 				AA71986D287A81A000623C15 /* PTFakeMetaTouch.h in Headers */,
 				AA719870287A81A000623C15 /* UIEvent+Private.h in Headers */,
 				AA71970E287A44D200623C15 /* PlayLoader.h in Headers */,
+				0AFACD022E8C8B2E00551DDB /* error.h in Headers */,
+				0AFACD032E8C8B2E00551DDB /* debug.h in Headers */,
+				0AFACD042E8C8B2E00551DDB /* utility.h in Headers */,
 				AA719872287A81A000623C15 /* UITouch+Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -733,6 +899,8 @@
 				9562D1602AB4FD46002C329D /* TransparentControllerEventAdapter.swift in Sources */,
 				B46C02C72C634AB5007637AB /* BatteryLevel.m in Sources */,
 				9562D1792AB64458002C329D /* ModeAutomaton.swift in Sources */,
+				0AFACCE92E8C8AF500551DDB /* Assembler.c in Sources */,
+				0AFACCEA2E8C8AF500551DDB /* InlineHook.c in Sources */,
 				AA71970D287A44D200623C15 /* PlaySettings.swift in Sources */,
 				95D474FB2C0BA77B0072797F /* JoystickElement.swift in Sources */,
 				AA719759287A480D00623C15 /* PlayAction.swift in Sources */,
@@ -754,16 +922,24 @@
 				AA71970B287A44D200623C15 /* PlayLoader.m in Sources */,
 				9555ED332C058E36006E469C /* DebugController.swift in Sources */,
 				9562D1512AB484C7002C329D /* EventAdapters.swift in Sources */,
+				0AFACCFC2E8C8B1C00551DDB /* Macho.c in Sources */,
 				AA7197AF287A481500623C15 /* KeyCodeNames.swift in Sources */,
 				9555ED2F2C058E08006E469C /* DebugView.swift in Sources */,
 				AA71978A287A480D00623C15 /* ControlMode.swift in Sources */,
+				0AFACCDD2E8C89D100551DDB /* krpc_vm_protect.c in Sources */,
+				0AFACCDE2E8C89D100551DDB /* krpcUser.c in Sources */,
 				AA7197AD287A481500623C15 /* EditorController.swift in Sources */,
 				9562D16B2AB505AD002C329D /* MouseEventAdapter.swift in Sources */,
 				9562D15C2AB4FC79002C329D /* TransparentMouseEventAdapter.swift in Sources */,
+				0AFACCF32E8C8B0900551DDB /* MemoryTracker.c in Sources */,
+				0AFACCF42E8C8B0900551DDB /* MemoryAllocator.c in Sources */,
 				9562D1772AB52550002C329D /* EditorControllerEventAdapter.swift in Sources */,
 				AA7197A3287A481500623C15 /* CircleMenuButton.swift in Sources */,
 				9562D1582AB4FB9B002C329D /* TouchscreenKeyboardEventAdapter.swift in Sources */,
 				9555ED312C058E28006E469C /* DebugModel.swift in Sources */,
+				0AFACCCF2E8C897900551DDB /* core.c in Sources */,
+				0AFACCD02E8C897900551DDB /* libproxychains.c in Sources */,
+				0AFACCD12E8C897900551DDB /* common.c in Sources */,
 				AA7197A9287A481500623C15 /* PlayInfo.swift in Sources */,
 				AA71986A287A81A000623C15 /* PTFakeMetaTouch.m in Sources */,
 				9562D15E2AB4FCB8002C329D /* TouchscreenControllerEventAdapter.swift in Sources */,
@@ -919,6 +1095,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SYSTEM_HEADER_SEARCH_PATHS = PlayTools/Hook;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -977,6 +1154,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SYSTEM_HEADER_SEARCH_PATHS = PlayTools/Hook;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

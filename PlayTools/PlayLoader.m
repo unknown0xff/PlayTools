@@ -253,3 +253,8 @@ static void __attribute__((constructor)) initialize(void) {
 }
 
 @end
+
+char *getProxychainsSettings(void) {
+    NSString *config = [[PlaySettings shared] getProxychainsSettings];
+    return strdup([config UTF8String]);
+}
