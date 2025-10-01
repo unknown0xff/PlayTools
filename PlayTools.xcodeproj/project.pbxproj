@@ -14,7 +14,7 @@
 		0AFACCD12E8C897900551DDB /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFACCCB2E8C897900551DDB /* common.c */; };
 		0AFACCD22E8C897900551DDB /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCCC2E8C897900551DDB /* core.h */; };
 		0AFACCD32E8C897900551DDB /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCCA2E8C897900551DDB /* common.h */; };
-		0AFACCDD2E8C89D100551DDB /* krpc_vm_protect.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFACCDB2E8C89D100551DDB /* krpc_vm_protect.c */; };
+		0AFACCDD2E8C89D100551DDB /* krpc_vm_protect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFACCDB2E8C89D100551DDB /* krpc_vm_protect.m */; };
 		0AFACCDE2E8C89D100551DDB /* krpcUser.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFACCDC2E8C89D100551DDB /* krpcUser.c */; };
 		0AFACCDF2E8C89D100551DDB /* krpc.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCDA2E8C89D100551DDB /* krpc.h */; };
 		0AFACCE22E8C8AE300551DDB /* dyld_cache_format.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFACCE12E8C8AE300551DDB /* dyld_cache_format.h */; };
@@ -138,7 +138,7 @@
 		0AFACCCD2E8C897900551DDB /* core.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
 		0AFACCCE2E8C897900551DDB /* libproxychains.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = libproxychains.c; sourceTree = "<group>"; };
 		0AFACCDA2E8C89D100551DDB /* krpc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = krpc.h; sourceTree = "<group>"; };
-		0AFACCDB2E8C89D100551DDB /* krpc_vm_protect.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = krpc_vm_protect.c; sourceTree = "<group>"; };
+		0AFACCDB2E8C89D100551DDB /* krpc_vm_protect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = krpc_vm_protect.m; sourceTree = "<group>"; };
 		0AFACCDC2E8C89D100551DDB /* krpcUser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = krpcUser.c; sourceTree = "<group>"; };
 		0AFACCE02E8C8AE300551DDB /* cs_blobs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cs_blobs.h; sourceTree = "<group>"; };
 		0AFACCE12E8C8AE300551DDB /* dyld_cache_format.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dyld_cache_format.h; sourceTree = "<group>"; };
@@ -313,7 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				0AFACCDA2E8C89D100551DDB /* krpc.h */,
-				0AFACCDB2E8C89D100551DDB /* krpc_vm_protect.c */,
+				0AFACCDB2E8C89D100551DDB /* krpc_vm_protect.m */,
 				0AFACCDC2E8C89D100551DDB /* krpcUser.c */,
 			);
 			path = krpc;
@@ -926,7 +926,7 @@
 				AA7197AF287A481500623C15 /* KeyCodeNames.swift in Sources */,
 				9555ED2F2C058E08006E469C /* DebugView.swift in Sources */,
 				AA71978A287A480D00623C15 /* ControlMode.swift in Sources */,
-				0AFACCDD2E8C89D100551DDB /* krpc_vm_protect.c in Sources */,
+				0AFACCDD2E8C89D100551DDB /* krpc_vm_protect.m in Sources */,
 				0AFACCDE2E8C89D100551DDB /* krpcUser.c in Sources */,
 				AA7197AD287A481500623C15 /* EditorController.swift in Sources */,
 				9562D16B2AB505AD002C329D /* MouseEventAdapter.swift in Sources */,
