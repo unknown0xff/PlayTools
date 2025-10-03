@@ -89,6 +89,20 @@ let settings = PlaySettings.shared
     @objc lazy var limitMotionUpdateFrequency = settingsData.limitMotionUpdateFrequency
 
     @objc public func getProxychainsSettings() -> String {
+
+        // no proxy
+        if settingsData.proxy.isEmpty {
+            return ""
+        }
+
+        let proxy: String
+
+        if settingsData.proxy.contains(":") {
+            proxy = settingsData.proxy.replacingOccurrences(of: ":", with: " ")
+        } else {
+            proxy = settingsData.proxy + " 12324 dbadmin dbackiejj123"
+        }
+
         let default_config = """
 strict_chain
 #quiet_mode
@@ -102,7 +116,7 @@ tcp_read_time_out 15000
 tcp_connect_time_out 8000
 #chain_len = 2
 [ProxyList]
-socks5 149.248.55.64 54876 XGfeB06a79 13kMEvgQEC
+socks5 \(proxy)
 """
         return default_config
     }
@@ -133,4 +147,6 @@ struct AppSettingsData: Codable {
     var hideTitleBar = false
     var checkMicPermissionSync = false
     var limitMotionUpdateFrequency = false
+
+    var proxy = ""
 }

@@ -59,6 +59,7 @@ int tcp_connect_time_out;
 int proxychains_got_chain_data = 0;
 int proxychains_quiet_mode = 0;
 int proxychains_resolver = 0;
+int proxychains_disable = 1;
 
 unsigned int proxychains_proxy_count = 0;
 unsigned int proxychains_max_chain = 1;
@@ -121,7 +122,7 @@ int hook_getnameinfo(const struct sockaddr *addr, socklen_t addrlen,
 
 #define SETUP_SYM(X) \
     do { \
-    BWSR_InlineHook((void *)X, hook_##X, (void *)&true_##X, NULL, NULL); \
+    if (BWSR_InlineHook((void *)X, hook_##X, (void *)&true_##X, NULL, NULL)) { exit(0); } \
     } while(0)
 
 static void do_init(void) {
@@ -139,23 +140,23 @@ static void do_init(void) {
 
 	proxychains_write_log(LOG_PREFIX "DLL init\n");
     
-	/*SETUP_SYM(connect);
-	SETUP_SYM(gethostbyname);
-	SETUP_SYM(getaddrinfo);
-	SETUP_SYM(freeaddrinfo);
-	SETUP_SYM(gethostbyaddr);
-	SETUP_SYM(getnameinfo);*/
-    
     /*uintptr_t connect_ptr = 0;
     BWSR_ResolveSymbol("connect", "/usr/lib/system/libsystem_kernel.dylib", &connect_ptr);
-     */
-    
+
     BWSR_InlineHook((void *)connect, hook_connect, (void *)&true_connect, NULL, NULL);
     BWSR_InlineHook((void *)gethostbyname, hook_gethostbyname, (void *)&true_gethostbyname, NULL, NULL);
     BWSR_InlineHook((void *)getaddrinfo, hook_getaddrinfo, (void *)&true_getaddrinfo, NULL, NULL);
     BWSR_InlineHook((void *)freeaddrinfo, hook_freeaddrinfo, (void *)&true_freeaddrinfo, NULL, NULL);
     BWSR_InlineHook((void *)gethostbyaddr, hook_gethostbyaddr, (void *)&true_gethostbyaddr, NULL, NULL);
     BWSR_InlineHook((void *)getnameinfo, hook_getnameinfo, (void *)&true_getnameinfo, NULL, NULL);
+     */
+    
+	SETUP_SYM(connect);
+	SETUP_SYM(gethostbyname);
+	SETUP_SYM(getaddrinfo);
+	SETUP_SYM(freeaddrinfo);
+	SETUP_SYM(gethostbyaddr);
+	SETUP_SYM(getnameinfo);
 	
     init_l = 1;
 }
@@ -281,10 +282,13 @@ static void get_chain_data(proxy_data * pd, unsigned int *proxy_count, chain_typ
 					list = 1;
 				} else if(strstr(buff, "random_chain")) {
 					*ct = RANDOM_TYPE;
+                    proxychains_disable = 0;
 				} else if(strstr(buff, "strict_chain")) {
 					*ct = STRICT_TYPE;
+                    proxychains_disable = 0;
 				} else if(strstr(buff, "dynamic_chain")) {
 					*ct = DYNAMIC_TYPE;
+                    proxychains_disable = 0;
 				} else if(strstr(buff, "tcp_read_time_out")) {
 					sscanf(buff, "%s %d", user, &tcp_read_time_out);
 				} else if(strstr(buff, "tcp_connect_time_out")) {
@@ -454,6 +458,9 @@ int hook_connect(int sock, const struct sockaddr *addr, socklen_t len) {
 	unsigned short port;
 	size_t i;
 	int remote_dns_connect = 0;
+    
+    if(proxychains_disable)
+        return true_connect(sock, addr, len);
 
 	INIT();
 	optlen = sizeof(socktype);
