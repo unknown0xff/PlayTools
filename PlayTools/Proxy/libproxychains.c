@@ -111,6 +111,7 @@ int hook_getnameinfo(const struct sockaddr *addr, socklen_t addrlen,
                 char *serv, socklen_t servlen,
                 int flags);
 
+extern char *getProxychainsSettings(void);
 
 #define INIT() init_lib_wrapper(__FUNCTION__)
 
@@ -131,6 +132,13 @@ static void do_init(void) {
 #ifdef __APPLE__
 	MUTEX_INIT(&internal_getsrvbyname_lock, NULL);
 #endif
+    
+    const char *conf = getProxychainsSettings();
+    
+    if (!conf || strlen(conf) == 0) {
+        proxychains_disable = 1;
+        return;
+    }
 
 	/* check for simple SOCKS5 proxy setup */
 	simple_socks5_env(proxychains_pd, &proxychains_proxy_count, &proxychains_ct);
@@ -227,19 +235,18 @@ static void get_chain_data(proxy_data * pd, unsigned int *proxy_count, chain_typ
 	unsigned int count = 0;
 	int port_n = 0, list = 0;
 	char type[1024], host[1024], user[1024];
-	char *env;
+	// char *env;
 	char local_in_addr_port[32];
 	char local_in_addr[32], local_in_port[32], local_netmask[32];
 	char dnat_orig_addr_port[32], dnat_new_addr_port[32];
 	char dnat_orig_addr[32], dnat_orig_port[32], dnat_new_addr[32], dnat_new_port[32];
-	FILE *file = NULL;
+	// FILE *file = NULL;
 
 	if(proxychains_got_chain_data)
 		return;
 
 	load_default_settings(ct);
     
-    extern char *getProxychainsSettings(void);
     const char* config_str = getProxychainsSettings();
     
     char* saveptr = NULL;
