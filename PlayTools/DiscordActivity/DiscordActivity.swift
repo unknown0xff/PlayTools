@@ -8,7 +8,7 @@
 import Foundation
 
 class DiscordActivity: Codable {
-    var enable = true
+    var enable = false
     var applicationID = ""
     var details = ""
     var state = ""

@@ -128,10 +128,10 @@ struct AppSettingsData: Codable {
 
     var disableTimeout = false
     var iosDeviceModel = "iPad13,8"
-    var windowWidth = 1920
-    var windowHeight = 1080
+    var windowWidth = 430
+    var windowHeight = 932
     var customScaler = 2.0
-    var resolution = 2
+    var resolution = 5
     var aspectRatio = 1
     var notch = false
     var bypass = false
