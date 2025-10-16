@@ -127,7 +127,7 @@ struct AppSettingsData: Codable {
     var sensitivity: Float = 50
 
     var disableTimeout = false
-    var iosDeviceModel = "iPad13,8"
+    var iosDeviceModel = "iPhone16,2"
     var windowWidth = 430
     var windowHeight = 932
     var customScaler = 2.0
